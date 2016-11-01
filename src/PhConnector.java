@@ -33,7 +33,7 @@ public class PhConnector {
 					Statement stmt = (Statement) connection.createStatement();
 				
 					
-					stmt.executeUpdate("DELETE FROM product WHERE naam = 'videokaart' OR naam = 'harde schijf'");
+					stmt.executeUpdate("DELETE FROM product WHERE name = 'videokaart' OR name = 'harde schijf'");
 					stmt.executeUpdate("INSERT INTO product VALUES ('videokaart', 100)");
 					stmt.executeQuery("START TRANSACTION");
 					Thread.sleep(3000);
