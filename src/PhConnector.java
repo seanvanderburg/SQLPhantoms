@@ -67,8 +67,8 @@ public class PhConnector {
 				}
 
 				String url = "jdbc:mysql://localhost:3306/anlop1";
-				String username = "sean";
-				String password = "boeing707";
+				String username = "";
+				String password = "";
 				Connection connection = null;
 				try {
 					connection = DriverManager.getConnection(url, username,
